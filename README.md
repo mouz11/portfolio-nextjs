@@ -148,13 +148,6 @@ The easiest way to deploy your portfolio is using [Vercel](https://vercel.com):
 3. Add your environment variables
 4. Deploy!
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/creative-portfolio/issues).
 
 ## 💖 Support
 
