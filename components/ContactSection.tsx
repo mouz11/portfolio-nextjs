@@ -35,8 +35,7 @@ export default function ContactSection() {
     resolver: zodResolver(formSchema),
   })
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const onSubmit = async (data: FormData) => {
     if (isLoading) return
     setIsLoading(true)
 
@@ -142,12 +141,13 @@ export default function ContactSection() {
             <form
               ref={formRef}
               className="space-y-4"
-              onSubmit={onSubmit}
+              onSubmit={handleSubmit(onSubmit)}
             >
               <div>
                 <Input
                   placeholder="Your Name"
                   {...register('name')}
+                  name="user_name"
                   className={errors.name ? 'border-red-500' : ''}
                   disabled={isLoading}
                 />
@@ -157,6 +157,7 @@ export default function ContactSection() {
                 <Input
                   placeholder="Your Email"
                   {...register('email')}
+                  name="user_email"
                   className={errors.email ? 'border-red-500' : ''}
                   disabled={isLoading}
                 />
@@ -166,6 +167,7 @@ export default function ContactSection() {
                 <Textarea
                   placeholder="Your Message"
                   {...register('message')}
+                  name="message"
                   className={errors.message ? 'border-red-500' : ''}
                   disabled={isLoading}
                 />
