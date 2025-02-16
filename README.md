@@ -18,8 +18,8 @@ A modern, responsive portfolio template built with Next.js 14, TypeScript, and T
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/creative-portfolio.git
-   cd creative-portfolio
+   git clone https://github.com/mouz11/portfolio-nextjs.git
+   cd portfolio-nextjs
    ```
 
 2. Install dependencies:
